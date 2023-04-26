@@ -10,13 +10,10 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
-st.title('Plot a map : 맵 예제')
+st.title('Slider widget : 슬라이더 위젯 예제')
 
-map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-    columns=['lat', 'lon'])
-
-st.map(map_data)
+x = st.slider('x')  # 👈 this is a widget
+st.write(x, 'squared is', x * x)
 
 st.title('Uber pickups in NYC : 우버 픽업 예제')
 

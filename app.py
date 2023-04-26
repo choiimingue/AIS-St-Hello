@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('Draw a line chart : 라인 차트 예제')
+st.title('Draw a line chart')
 
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
@@ -10,12 +10,12 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
-st.title('Slider widget : 슬라이더 위젯 예제')
+st.title('Slider widget')
 
 x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
 
-st.title('Uber pickups in NYC : 우버 픽업 예제')
+st.title('Uber pickups in NYC')
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
